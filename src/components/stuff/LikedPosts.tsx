@@ -6,7 +6,6 @@ import styles from "./likedposts.module.css";
 
 export default function LikedPosts() {
   const likedPosts = useSelector((state: any) => state.likeHandler);
-  console.log(likedPosts);
 
   return (
     <>
