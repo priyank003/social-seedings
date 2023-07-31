@@ -17,13 +17,12 @@ import { useSelector } from "react-redux";
 const queryClient = new QueryClient();
 const fetchData = async (page: number) => {
   const response = await fetch(
-    `${"https://api.unsplash.com"}/photos?client_id=${"9ZYpYzQEL0dAohdAf6Vk1nczpQ554Naxdx0y_mFnYPg"}&page=${page}`
+    `${process.env.NEXT_PUBLIC_UNSPLASH_API}/photos?client_id=${process.env.NEXT_PUBLIC_UNSPLASH_CLIENT_ID}&page=${page}`
   );
   return await response.json();
 };
 const MyComponent = () => {
   const state = useSelector((state) => state);
-  console.log(state);
   const myRef = useRef(null);
   const [isLoadingCircle, setIsloadingCircle] = useState(true);
   const [isLoadingDots, setIsloadingDots] = useState(true);

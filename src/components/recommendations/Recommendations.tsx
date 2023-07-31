@@ -6,7 +6,7 @@ import LoadingCircle from "../loading/LoadingCircle";
 import LoadingDots from "../loading/LoadingDots";
 const fetchData = async (page: number, count: number) => {
   const response = await fetch(
-    `${"https://api.unsplash.com"}/photos?client_id=${"9ZYpYzQEL0dAohdAf6Vk1nczpQ554Naxdx0y_mFnYPg"}&page=${page}&count=${count}`
+    `${process.env.NEXT_PUBLIC_UNSPLASH_API}/photos?client_id=${process.env.NEXT_PUBLIC_UNSPLASH_CLIENT_ID}&page=${page}&count=${count}`
   );
   return await response.json();
 };
