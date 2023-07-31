@@ -69,7 +69,7 @@ const MyComponent = () => {
               );
             })
           )}
-          {isLoadingDots && <LoadingDots />}
+
           <span ref={myRef}></span>
         </div>
       </div>
