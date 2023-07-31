@@ -1,6 +1,7 @@
 # Social Seedings - Next.js Project
 
-![Social Seedings](/path/to/your/logo.png)
+![image](https://github.com/priyank003/social-seedings/assets/79754424/c87e8674-e237-491c-95ea-7043d44df77a)
+
 
 Welcome to **Social Seedings**, a Next.js project that aims to revolutionize social media interactions and engagement. This repository contains the source code for the application that allows users to connect with each other, share ideas, and grow their social presence.
 
