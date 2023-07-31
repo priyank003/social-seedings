@@ -45,7 +45,7 @@ With **Social Seedings**, we envision a community where ideas are nurtured, tale
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/social-seedings.git
+git clone https://github.com/priyank003/social-seedings.git
 cd social-seedings
 ```
 
