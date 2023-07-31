@@ -22,13 +22,9 @@ With **Social Seedings**, we envision a community where ideas are nurtured, tale
 
 ## Features
 
-- **User Authentication**: Users can create accounts, log in, and secure their profiles with authentication measures.
+- **Posts and Comments**: Users can like posts, and view it in customizable layout.
 
-- **Profile Management**: Users can customize their profiles, add personal information, and upload profile pictures.
-
-- **Posts and Comments**: Users can create posts, like, comment, and share posts from others.
-
-- **Social Interaction**: Users can follow each other, send direct messages, and build connections.
+- **Social Interaction**: Users can view other user profile.
 
 - **Notifications**: Stay up-to-date with the latest activities through real-time notifications.
 
@@ -42,13 +38,7 @@ With **Social Seedings**, we envision a community where ideas are nurtured, tale
 
 - **React**: The front-end is developed using React, offering a modular and efficient component-based structure.
 
-- **Node.js**: The application utilizes Node.js for server-side scripting and runtime environment.
-
-- **Express**: The back-end is powered by Express, providing a flexible and minimalistic Node.js web application framework.
-
-- **MongoDB**: The database of choice is MongoDB, a NoSQL database, for storing user information, posts, and interactions.
-
-- **Socket.IO**: For real-time notifications and messaging, Socket.IO is integrated into the application.
+- **CSS**: Native css without use of any UI library, a fullly responsive code.
 
 ## Installation
 
@@ -57,3 +47,21 @@ With **Social Seedings**, we envision a community where ideas are nurtured, tale
 ```bash
 git clone https://github.com/your-username/social-seedings.git
 cd social-seedings
+```
+
+2. Install the required dependencies::
+
+```bash
+npm install
+```
+3. Set up the environment variables:
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to http://localhost:3000 to access the application.
+
+
