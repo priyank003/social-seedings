@@ -5,9 +5,9 @@ const likesSlice = createSlice({
     photos: [],
   },
   reducers: {
-    add: (state, action) => {
+    add: (state: any, action: any) => {
       const itemExists = state.photos.find(
-        (item) => item.id === action.payload.id
+        (item: any) => item.id === action.payload.id
       );
 
       if (!itemExists) {
