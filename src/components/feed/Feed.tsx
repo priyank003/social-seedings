@@ -84,13 +84,13 @@ const POSTS = [
   },
 ];
 
-const Feed = async ({ data }) => {
+const Feed = ({ data }: any) => {
   // const data = await getData();
 
   return (
     <div className={`${styles.feed__container} flex__center`}>
       <div className={styles.feed__content}>
-        {data.map((post) => {
+        {data.map((post: any) => {
           return <FeedCard key={post.id} data={post} />;
         })}
       </div>

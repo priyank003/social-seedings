@@ -15,8 +15,8 @@ export default function Recommendations() {
   const [isLoadingCircle, setIsloadingCircle] = React.useState(true);
   const [userData, setUserData] = React.useState([]);
   React.useEffect(() => {
-    fetchData(1, 5).then((res) =>
-      setUserData((prev: any) => [...prev, ...res])
+    fetchData(1, 5).then((res: any) =>
+      setUserData((prev: any): any => [...prev, ...res])
     );
   }, []);
   React.useEffect(() => {
