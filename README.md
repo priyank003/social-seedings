@@ -11,10 +11,6 @@ Welcome to **Social Seedings**, a Next.js project that aims to revolutionize soc
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 In today's digital age, social media plays a crucial role in our lives, both personally and professionally. **Social Seedings** is designed to provide a seamless platform where users can connect with others, engage in meaningful conversations, and foster relationships to thrive in the ever-changing landscape of social media.
