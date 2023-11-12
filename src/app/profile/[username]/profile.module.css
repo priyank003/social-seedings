@@ -1,5 +1,4 @@
 .profile__container {
-  /* height: 100vh; */
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -108,7 +107,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .profile__container_headernav{
+  .profile__container_headernav {
     display: block;
   }
   .profile__container_sidenav {
@@ -146,5 +145,4 @@
     grid-template-columns: repeat(2, minmax(100px, 293px));
     grid-gap: 10px;
   }
-
 }

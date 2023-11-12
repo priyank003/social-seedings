@@ -14,14 +14,7 @@ export default function NotFound() {
           </Link>
         </div>
       </div>
-      <Image
-        src={img}
-        alt="Picture of the author"
-        // width={500} automatically provided
-        // height={500} automatically provided
-        // blurDataURL="data:..." automatically provided
-        // placeholder="blur" // Optional blur-up while loading
-      />
+      <Image src={img} alt="Picture of the author" />
     </div>
   );
 }

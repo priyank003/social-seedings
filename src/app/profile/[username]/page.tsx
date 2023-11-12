@@ -5,7 +5,6 @@ import { getUserProfile } from "@/lib/get-data";
 import Header from "@/components/header/Header";
 
 export default async function Profile({ params }: any) {
-  // const [orientation, setOrientation] = useState("grid");
   const profileData = await getUserProfile(params.username);
 
   return (

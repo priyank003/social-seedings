@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useCallback } from "react";
 import styles from "./feedcard.module.css";
 import Link from "next/link";
 import { BsHeart, BsHeartFill, BsShare } from "react-icons/bs";
@@ -9,17 +9,15 @@ import { add } from "@/app/GlobalRedux/likeSlice";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function FeedCard({ data }: any) {
-  const notify = () => toast("Here is your toast.");
   const dispatch = useDispatch();
-  const state = useSelector((state: any) => state);
-  console.log("initial state", state);
 
-  const likeHandler = () => {
+  const likeHandler = useCallback(() => {
     dispatch(add(data));
-    toast("liked post");
-  };
+    toast("liked post", {
+      duration: 500,
+    });
+  }, [data]);
 
-  // console.log(data.user.profile_image);
   return (
     <div className={styles.feed__card}>
       <div className={styles.feed__card_header}>
@@ -52,9 +50,7 @@ export default function FeedCard({ data }: any) {
           ~<span className={styles.feed__card_desc}>{data.description}</span>
         </div>
       </div>
-      <div className={styles.feed__card_footer}>
-        <Toaster />
-      </div>
+      <div className={styles.feed__card_footer}>{/* <Toaster /> */}</div>
     </div>
   );
 }

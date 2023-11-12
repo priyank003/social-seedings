@@ -11,8 +11,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import LoadingCircle from "./loading/LoadingCircle";
-import LoadingDots from "./loading/LoadingDots";
-import { useSelector } from "react-redux";
+import { Toaster } from "react-hot-toast";
 
 const queryClient = new QueryClient();
 const fetchData = async (page: number) => {
@@ -22,7 +21,6 @@ const fetchData = async (page: number) => {
   return await response.json();
 };
 const MyComponent = () => {
-  const state = useSelector((state) => state);
   const myRef = useRef(null);
   const [isLoadingCircle, setIsloadingCircle] = useState(true);
   const [isLoadingDots, setIsloadingDots] = useState(true);
@@ -71,6 +69,7 @@ const MyComponent = () => {
 
           <span ref={myRef}></span>
         </div>
+        <Toaster />
       </div>
     </>
   );

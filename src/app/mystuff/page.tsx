@@ -10,9 +10,6 @@ export default function page() {
         <SideNav />
       </div>
       <div className={styles.mystuff__main}>
-        {/* <div className={styles.mystuff__left_nav}>
-          <LikedPostsNav />
-        </div> */}
         <div className={styles.mystuff__right_content}>
           <LikedPosts />
         </div>
