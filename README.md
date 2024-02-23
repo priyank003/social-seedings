@@ -1,3 +1,5 @@
+live link https://social-seedings-gamma.vercel.app/
+
 # Social Seedings - Next.js Project
 
 ![image](https://github.com/priyank003/social-seedings/assets/79754424/c87e8674-e237-491c-95ea-7043d44df77a)
